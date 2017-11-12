@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		011D062F1FB8D18A0082ACBD /* libcrypto.1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 011D062E1FB8D18A0082ACBD /* libcrypto.1.0.0.dylib */; };
 		01D5408C1F9AA0FF00A721C6 /* unihivelib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01D5408B1F9AA0FF00A721C6 /* unihivelib.cpp */; };
 		01D540C81F9AA19300A721C6 /* c_blake256.c in Sources */ = {isa = PBXBuildFile; fileRef = 01D540B61F9AA19300A721C6 /* c_blake256.c */; };
 		01D540C91F9AA19300A721C6 /* c_groestl.c in Sources */ = {isa = PBXBuildFile; fileRef = 01D540B81F9AA19300A721C6 /* c_groestl.c */; };
@@ -46,7 +45,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		011D062E1FB8D18A0082ACBD /* libcrypto.1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libcrypto.1.0.0.dylib; sourceTree = "<group>"; };
 		01D540821F9AA0EF00A721C6 /* unihivelib.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = unihivelib.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		01D540851F9AA0EF00A721C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01D5408B1F9AA0FF00A721C6 /* unihivelib.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = unihivelib.cpp; sourceTree = "<group>"; };
@@ -86,7 +84,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				011D062F1FB8D18A0082ACBD /* libcrypto.1.0.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,7 +171,6 @@
 		01D540EF1F9AAB6200A721C6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				011D062E1FB8D18A0082ACBD /* libcrypto.1.0.0.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -197,7 +193,6 @@
 				01D5407E1F9AA0EF00A721C6 /* Sources */,
 				01D5407F1F9AA0EF00A721C6 /* Frameworks */,
 				01D540801F9AA0EF00A721C6 /* Resources */,
-				011D06301FB8D2770082ACBD /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -271,22 +266,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		011D06301FB8D2770082ACBD /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "export DYLIB=libcrypto.1.0.0.dylib\n\nmkdir \"$TARGET_BUILD_DIR/$TARGET_NAME.bundle/Contents/Frameworks\"\n\ncp -f \"$SRCROOT/$DYLIB\" \"$TARGET_BUILD_DIR/$TARGET_NAME.bundle/Contents/Frameworks\"\n\ninstall_name_tool -change @executable_path/$DYLIB @loader_path/../Frameworks/$DYLIB \"$TARGET_BUILD_DIR/$TARGET_NAME.bundle/Contents/MacOS/$PRODUCT_NAME\"";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		01D5407E1F9AA0EF00A721C6 /* Sources */ = {
@@ -378,6 +357,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = NO;
@@ -437,7 +417,7 @@
 		01D540891F9AA0EF00A721C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD)";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -445,10 +425,7 @@
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = coinhivelib/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				OTHER_LDFLAGS = "";
@@ -463,7 +440,7 @@
 		01D5408A1F9AA0EF00A721C6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD)";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -471,10 +448,7 @@
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = coinhivelib/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				OTHER_LDFLAGS = "";
 				PRELINK_LIBS = "";
