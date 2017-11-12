@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		011D062F1FB8D18A0082ACBD /* libcrypto.1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 011D062E1FB8D18A0082ACBD /* libcrypto.1.0.0.dylib */; };
 		01D5408C1F9AA0FF00A721C6 /* unihivelib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01D5408B1F9AA0FF00A721C6 /* unihivelib.cpp */; };
 		01D540C81F9AA19300A721C6 /* c_blake256.c in Sources */ = {isa = PBXBuildFile; fileRef = 01D540B61F9AA19300A721C6 /* c_blake256.c */; };
 		01D540C91F9AA19300A721C6 /* c_groestl.c in Sources */ = {isa = PBXBuildFile; fileRef = 01D540B81F9AA19300A721C6 /* c_groestl.c */; };
@@ -18,7 +19,6 @@
 		01D540E81F9AA1B600A721C6 /* minethd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01D540D21F9AA1B500A721C6 /* minethd.cpp */; settings = {COMPILER_FLAGS = "-march=haswell -Wall"; }; };
 		01D540EB1F9AA1B600A721C6 /* jconf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01D540DD1F9AA1B600A721C6 /* jconf.cpp */; };
 		01D540EE1F9AA1B600A721C6 /* executor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01D540E41F9AA1B600A721C6 /* executor.cpp */; };
-		01D540F21F9AAB6200A721C6 /* libcrypto.1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 01D540F01F9AAB6200A721C6 /* libcrypto.1.0.0.dylib */; };
 		01E6AAE51F9E933C00283B7E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01E6AAE41F9E933C00283B7E /* main.cpp */; };
 		01E6AAEA1F9E968D00283B7E /* c_blake256.c in Sources */ = {isa = PBXBuildFile; fileRef = 01D540B61F9AA19300A721C6 /* c_blake256.c */; };
 		01E6AAEB1F9E968D00283B7E /* c_groestl.c in Sources */ = {isa = PBXBuildFile; fileRef = 01D540B81F9AA19300A721C6 /* c_groestl.c */; };
@@ -30,7 +30,6 @@
 		01E6AAF11F9E968D00283B7E /* executor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01D540E41F9AA1B600A721C6 /* executor.cpp */; };
 		01E6AAF21F9E968D00283B7E /* jconf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01D540DD1F9AA1B600A721C6 /* jconf.cpp */; };
 		01E6AAF41F9E968D00283B7E /* minethd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01D540D21F9AA1B500A721C6 /* minethd.cpp */; settings = {COMPILER_FLAGS = "-march=haswell -Wall"; }; };
-		01E6AAF71F9E972200283B7E /* libcrypto.1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 01D540F01F9AAB6200A721C6 /* libcrypto.1.0.0.dylib */; };
 		01E6AAFA1F9EB10D00283B7E /* unihivelib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01D5408B1F9AA0FF00A721C6 /* unihivelib.cpp */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +46,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		011D062E1FB8D18A0082ACBD /* libcrypto.1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libcrypto.1.0.0.dylib; sourceTree = "<group>"; };
 		01D540821F9AA0EF00A721C6 /* unihivelib.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = unihivelib.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		01D540851F9AA0EF00A721C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01D5408B1F9AA0FF00A721C6 /* unihivelib.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = unihivelib.cpp; sourceTree = "<group>"; };
@@ -76,12 +76,9 @@
 		01D540D71F9AA1B500A721C6 /* thdq.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = thdq.hpp; sourceTree = "<group>"; };
 		01D540DD1F9AA1B600A721C6 /* jconf.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = jconf.cpp; sourceTree = "<group>"; };
 		01D540E41F9AA1B600A721C6 /* executor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = executor.cpp; sourceTree = "<group>"; };
-		01D540F01F9AAB6200A721C6 /* libcrypto.1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.1.0.0.dylib; path = ../../../../../opt/local/lib/libcrypto.1.0.0.dylib; sourceTree = "<group>"; };
-		01D540F11F9AAB6200A721C6 /* libssl.1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libssl.1.0.0.dylib; path = ../../../../../opt/local/lib/libssl.1.0.0.dylib; sourceTree = "<group>"; };
 		01D540F41F9B6D8900A721C6 /* unihivelib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = unihivelib.h; sourceTree = "<group>"; };
 		01E6AAE21F9E933B00283B7E /* chcl */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = chcl; sourceTree = BUILT_PRODUCTS_DIR; };
 		01E6AAE41F9E933C00283B7E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		01E6AB131F9F84E700283B7E /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = ../../../../../opt/local/lib/libcrypto.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01D540F21F9AAB6200A721C6 /* libcrypto.1.0.0.dylib in Frameworks */,
+				011D062F1FB8D18A0082ACBD /* libcrypto.1.0.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,7 +94,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01E6AAF71F9E972200283B7E /* libcrypto.1.0.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,9 +174,7 @@
 		01D540EF1F9AAB6200A721C6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				01E6AB131F9F84E700283B7E /* libcrypto.a */,
-				01D540F01F9AAB6200A721C6 /* libcrypto.1.0.0.dylib */,
-				01D540F11F9AAB6200A721C6 /* libssl.1.0.0.dylib */,
+				011D062E1FB8D18A0082ACBD /* libcrypto.1.0.0.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -203,6 +197,7 @@
 				01D5407E1F9AA0EF00A721C6 /* Sources */,
 				01D5407F1F9AA0EF00A721C6 /* Frameworks */,
 				01D540801F9AA0EF00A721C6 /* Resources */,
+				011D06301FB8D2770082ACBD /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -241,7 +236,7 @@
 				TargetAttributes = {
 					01D540811F9AA0EF00A721C6 = {
 						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					01E6AAE11F9E933B00283B7E = {
 						CreatedOnToolsVersion = 9.0;
@@ -276,6 +271,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		011D06301FB8D2770082ACBD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export DYLIB=libcrypto.1.0.0.dylib\n\nmkdir \"$TARGET_BUILD_DIR/$TARGET_NAME.bundle/Contents/Frameworks\"\n\ncp -f \"$SRCROOT/$DYLIB\" \"$TARGET_BUILD_DIR/$TARGET_NAME.bundle/Contents/Frameworks\"\n\ninstall_name_tool -change @executable_path/$DYLIB @loader_path/../Frameworks/$DYLIB \"$TARGET_BUILD_DIR/$TARGET_NAME.bundle/Contents/MacOS/$PRODUCT_NAME\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		01D5407E1F9AA0EF00A721C6 /* Sources */ = {
@@ -348,7 +359,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -404,7 +415,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -428,15 +439,15 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD)";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				HEADER_SEARCH_PATHS = /opt/local/include;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = coinhivelib/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/opt/local/lib,
+					"$(PROJECT_DIR)",
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
@@ -454,15 +465,15 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD)";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				HEADER_SEARCH_PATHS = /opt/local/include;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = coinhivelib/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/opt/local/lib,
+					"$(PROJECT_DIR)",
 				);
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				OTHER_LDFLAGS = "";
@@ -480,8 +491,8 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				HEADER_SEARCH_PATHS = /opt/local/include;
-				LIBRARY_SEARCH_PATHS = /opt/local/lib;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -492,8 +503,8 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				HEADER_SEARCH_PATHS = /opt/local/include;
-				LIBRARY_SEARCH_PATHS = /opt/local/lib;
+				HEADER_SEARCH_PATHS = "";
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
