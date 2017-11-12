@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01D5408C1F9AA0FF00A721C6 /* unihivelib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01D5408B1F9AA0FF00A721C6 /* unihivelib.cpp */; };
+		01D540C81F9AA19300A721C6 /* c_blake256.c in Sources */ = {isa = PBXBuildFile; fileRef = 01D540B61F9AA19300A721C6 /* c_blake256.c */; };
+		01D540C91F9AA19300A721C6 /* c_groestl.c in Sources */ = {isa = PBXBuildFile; fileRef = 01D540B81F9AA19300A721C6 /* c_groestl.c */; };
+		01D540CA1F9AA19300A721C6 /* c_jh.c in Sources */ = {isa = PBXBuildFile; fileRef = 01D540BA1F9AA19300A721C6 /* c_jh.c */; };
+		01D540CB1F9AA19300A721C6 /* c_keccak.c in Sources */ = {isa = PBXBuildFile; fileRef = 01D540BC1F9AA19300A721C6 /* c_keccak.c */; };
+		01D540CC1F9AA19300A721C6 /* c_skein.c in Sources */ = {isa = PBXBuildFile; fileRef = 01D540BE1F9AA19300A721C6 /* c_skein.c */; };
+		01D540CD1F9AA19300A721C6 /* cryptonight_common.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01D540C21F9AA19300A721C6 /* cryptonight_common.cpp */; };
+		01D540CE1F9AA19300A721C6 /* soft_aes.c in Sources */ = {isa = PBXBuildFile; fileRef = 01D540C71F9AA19300A721C6 /* soft_aes.c */; };
+		01D540E81F9AA1B600A721C6 /* minethd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01D540D21F9AA1B500A721C6 /* minethd.cpp */; settings = {COMPILER_FLAGS = "-march=haswell -Wall"; }; };
+		01D540EB1F9AA1B600A721C6 /* jconf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01D540DD1F9AA1B600A721C6 /* jconf.cpp */; };
+		01D540EE1F9AA1B600A721C6 /* executor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01D540E41F9AA1B600A721C6 /* executor.cpp */; };
+		01D540F21F9AAB6200A721C6 /* libcrypto.1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 01D540F01F9AAB6200A721C6 /* libcrypto.1.0.0.dylib */; };
+		01E6AAE51F9E933C00283B7E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01E6AAE41F9E933C00283B7E /* main.cpp */; };
+		01E6AAEA1F9E968D00283B7E /* c_blake256.c in Sources */ = {isa = PBXBuildFile; fileRef = 01D540B61F9AA19300A721C6 /* c_blake256.c */; };
+		01E6AAEB1F9E968D00283B7E /* c_groestl.c in Sources */ = {isa = PBXBuildFile; fileRef = 01D540B81F9AA19300A721C6 /* c_groestl.c */; };
+		01E6AAEC1F9E968D00283B7E /* c_jh.c in Sources */ = {isa = PBXBuildFile; fileRef = 01D540BA1F9AA19300A721C6 /* c_jh.c */; };
+		01E6AAED1F9E968D00283B7E /* c_keccak.c in Sources */ = {isa = PBXBuildFile; fileRef = 01D540BC1F9AA19300A721C6 /* c_keccak.c */; };
+		01E6AAEE1F9E968D00283B7E /* c_skein.c in Sources */ = {isa = PBXBuildFile; fileRef = 01D540BE1F9AA19300A721C6 /* c_skein.c */; };
+		01E6AAEF1F9E968D00283B7E /* cryptonight_common.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01D540C21F9AA19300A721C6 /* cryptonight_common.cpp */; };
+		01E6AAF01F9E968D00283B7E /* soft_aes.c in Sources */ = {isa = PBXBuildFile; fileRef = 01D540C71F9AA19300A721C6 /* soft_aes.c */; };
+		01E6AAF11F9E968D00283B7E /* executor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01D540E41F9AA1B600A721C6 /* executor.cpp */; };
+		01E6AAF21F9E968D00283B7E /* jconf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01D540DD1F9AA1B600A721C6 /* jconf.cpp */; };
+		01E6AAF41F9E968D00283B7E /* minethd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01D540D21F9AA1B500A721C6 /* minethd.cpp */; settings = {COMPILER_FLAGS = "-march=haswell -Wall"; }; };
+		01E6AAF71F9E972200283B7E /* libcrypto.1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 01D540F01F9AAB6200A721C6 /* libcrypto.1.0.0.dylib */; };
+		01E6AAFA1F9EB10D00283B7E /* unihivelib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01D5408B1F9AA0FF00A721C6 /* unihivelib.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		01E6AAE01F9E933B00283B7E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		01D540821F9AA0EF00A721C6 /* unihivelib.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = unihivelib.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		01D540851F9AA0EF00A721C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01D5408B1F9AA0FF00A721C6 /* unihivelib.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = unihivelib.cpp; sourceTree = "<group>"; };
+		01D540B61F9AA19300A721C6 /* c_blake256.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = c_blake256.c; sourceTree = "<group>"; };
+		01D540B71F9AA19300A721C6 /* c_blake256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c_blake256.h; sourceTree = "<group>"; };
+		01D540B81F9AA19300A721C6 /* c_groestl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = c_groestl.c; sourceTree = "<group>"; };
+		01D540B91F9AA19300A721C6 /* c_groestl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c_groestl.h; sourceTree = "<group>"; };
+		01D540BA1F9AA19300A721C6 /* c_jh.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = c_jh.c; sourceTree = "<group>"; };
+		01D540BB1F9AA19300A721C6 /* c_jh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c_jh.h; sourceTree = "<group>"; };
+		01D540BC1F9AA19300A721C6 /* c_keccak.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = c_keccak.c; sourceTree = "<group>"; };
+		01D540BD1F9AA19300A721C6 /* c_keccak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c_keccak.h; sourceTree = "<group>"; };
+		01D540BE1F9AA19300A721C6 /* c_skein.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = c_skein.c; sourceTree = "<group>"; };
+		01D540BF1F9AA19300A721C6 /* c_skein.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = c_skein.h; sourceTree = "<group>"; };
+		01D540C01F9AA19300A721C6 /* cryptonight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cryptonight.h; sourceTree = "<group>"; };
+		01D540C11F9AA19300A721C6 /* cryptonight_aesni.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cryptonight_aesni.h; sourceTree = "<group>"; };
+		01D540C21F9AA19300A721C6 /* cryptonight_common.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = cryptonight_common.cpp; sourceTree = "<group>"; };
+		01D540C31F9AA19300A721C6 /* groestl_tables.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = groestl_tables.h; sourceTree = "<group>"; };
+		01D540C41F9AA19300A721C6 /* hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hash.h; sourceTree = "<group>"; };
+		01D540C51F9AA19300A721C6 /* int-util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "int-util.h"; sourceTree = "<group>"; };
+		01D540C61F9AA19300A721C6 /* skein_port.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = skein_port.h; sourceTree = "<group>"; };
+		01D540C71F9AA19300A721C6 /* soft_aes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = soft_aes.c; sourceTree = "<group>"; };
+		01D540D21F9AA1B500A721C6 /* minethd.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = minethd.cpp; sourceTree = "<group>"; };
+		01D540D31F9AA1B500A721C6 /* minethd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = minethd.h; sourceTree = "<group>"; };
+		01D540D41F9AA1B500A721C6 /* msgstruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = msgstruct.h; sourceTree = "<group>"; };
+		01D540D51F9AA1B500A721C6 /* jconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jconf.h; sourceTree = "<group>"; };
+		01D540D61F9AA1B500A721C6 /* executor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = executor.h; sourceTree = "<group>"; };
+		01D540D71F9AA1B500A721C6 /* thdq.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = thdq.hpp; sourceTree = "<group>"; };
+		01D540DD1F9AA1B600A721C6 /* jconf.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = jconf.cpp; sourceTree = "<group>"; };
+		01D540E41F9AA1B600A721C6 /* executor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = executor.cpp; sourceTree = "<group>"; };
+		01D540F01F9AAB6200A721C6 /* libcrypto.1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.1.0.0.dylib; path = ../../../../../opt/local/lib/libcrypto.1.0.0.dylib; sourceTree = "<group>"; };
+		01D540F11F9AAB6200A721C6 /* libssl.1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libssl.1.0.0.dylib; path = ../../../../../opt/local/lib/libssl.1.0.0.dylib; sourceTree = "<group>"; };
+		01D540F41F9B6D8900A721C6 /* unihivelib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = unihivelib.h; sourceTree = "<group>"; };
+		01E6AAE21F9E933B00283B7E /* chcl */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = chcl; sourceTree = BUILT_PRODUCTS_DIR; };
+		01E6AAE41F9E933C00283B7E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		01E6AB011F9F789300283B7E /* unihiveioslib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = unihiveioslib.h; sourceTree = "<group>"; };
+		01E6AB021F9F789300283B7E /* unihiveioslib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = unihiveioslib.m; sourceTree = "<group>"; };
+		01E6AB131F9F84E700283B7E /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = ../../../../../opt/local/lib/libcrypto.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01D5407F1F9AA0EF00A721C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01D540F21F9AAB6200A721C6 /* libcrypto.1.0.0.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01E6AADF1F9E933B00283B7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01E6AAF71F9E972200283B7E /* libcrypto.1.0.0.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01D540791F9AA0EF00A721C6 = {
+			isa = PBXGroup;
+			children = (
+				01D5408D1F9AA17700A721C6 /* miner */,
+				01D540841F9AA0EF00A721C6 /* coinhivelib */,
+				01E6AAE31F9E933C00283B7E /* chcl */,
+				01E6AB001F9F789300283B7E /* unihiveioslib */,
+				01D540831F9AA0EF00A721C6 /* Products */,
+				01D540EF1F9AAB6200A721C6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		01D540831F9AA0EF00A721C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01D540821F9AA0EF00A721C6 /* unihivelib.bundle */,
+				01E6AAE21F9E933B00283B7E /* chcl */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01D540841F9AA0EF00A721C6 /* coinhivelib */ = {
+			isa = PBXGroup;
+			children = (
+				01D540851F9AA0EF00A721C6 /* Info.plist */,
+				01D5408B1F9AA0FF00A721C6 /* unihivelib.cpp */,
+				01D540F41F9B6D8900A721C6 /* unihivelib.h */,
+			);
+			path = coinhivelib;
+			sourceTree = "<group>";
+		};
+		01D5408D1F9AA17700A721C6 /* miner */ = {
+			isa = PBXGroup;
+			children = (
+				01D540B51F9AA19300A721C6 /* crypto */,
+				01D540E41F9AA1B600A721C6 /* executor.cpp */,
+				01D540D61F9AA1B500A721C6 /* executor.h */,
+				01D540DD1F9AA1B600A721C6 /* jconf.cpp */,
+				01D540D51F9AA1B500A721C6 /* jconf.h */,
+				01D540D21F9AA1B500A721C6 /* minethd.cpp */,
+				01D540D31F9AA1B500A721C6 /* minethd.h */,
+				01D540D41F9AA1B500A721C6 /* msgstruct.h */,
+				01D540D71F9AA1B500A721C6 /* thdq.hpp */,
+			);
+			path = miner;
+			sourceTree = "<group>";
+		};
+		01D540B51F9AA19300A721C6 /* crypto */ = {
+			isa = PBXGroup;
+			children = (
+				01D540B61F9AA19300A721C6 /* c_blake256.c */,
+				01D540B71F9AA19300A721C6 /* c_blake256.h */,
+				01D540B81F9AA19300A721C6 /* c_groestl.c */,
+				01D540B91F9AA19300A721C6 /* c_groestl.h */,
+				01D540BA1F9AA19300A721C6 /* c_jh.c */,
+				01D540BB1F9AA19300A721C6 /* c_jh.h */,
+				01D540BC1F9AA19300A721C6 /* c_keccak.c */,
+				01D540BD1F9AA19300A721C6 /* c_keccak.h */,
+				01D540BE1F9AA19300A721C6 /* c_skein.c */,
+				01D540BF1F9AA19300A721C6 /* c_skein.h */,
+				01D540C01F9AA19300A721C6 /* cryptonight.h */,
+				01D540C11F9AA19300A721C6 /* cryptonight_aesni.h */,
+				01D540C21F9AA19300A721C6 /* cryptonight_common.cpp */,
+				01D540C31F9AA19300A721C6 /* groestl_tables.h */,
+				01D540C41F9AA19300A721C6 /* hash.h */,
+				01D540C51F9AA19300A721C6 /* int-util.h */,
+				01D540C61F9AA19300A721C6 /* skein_port.h */,
+				01D540C71F9AA19300A721C6 /* soft_aes.c */,
+			);
+			path = crypto;
+			sourceTree = "<group>";
+		};
+		01D540EF1F9AAB6200A721C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01E6AB131F9F84E700283B7E /* libcrypto.a */,
+				01D540F01F9AAB6200A721C6 /* libcrypto.1.0.0.dylib */,
+				01D540F11F9AAB6200A721C6 /* libssl.1.0.0.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		01E6AAE31F9E933C00283B7E /* chcl */ = {
+			isa = PBXGroup;
+			children = (
+				01E6AAE41F9E933C00283B7E /* main.cpp */,
+			);
+			path = chcl;
+			sourceTree = "<group>";
+		};
+		01E6AB001F9F789300283B7E /* unihiveioslib */ = {
+			isa = PBXGroup;
+			children = (
+				01E6AB011F9F789300283B7E /* unihiveioslib.h */,
+				01E6AB021F9F789300283B7E /* unihiveioslib.m */,
+			);
+			path = unihiveioslib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01D540811F9AA0EF00A721C6 /* unihivelib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01D540881F9AA0EF00A721C6 /* Build configuration list for PBXNativeTarget "unihivelib" */;
+			buildPhases = (
+				01D5407E1F9AA0EF00A721C6 /* Sources */,
+				01D5407F1F9AA0EF00A721C6 /* Frameworks */,
+				01D540801F9AA0EF00A721C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = unihivelib;
+			productName = coinhivelib;
+			productReference = 01D540821F9AA0EF00A721C6 /* unihivelib.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		01E6AAE11F9E933B00283B7E /* chcl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01E6AAE61F9E933C00283B7E /* Build configuration list for PBXNativeTarget "chcl" */;
+			buildPhases = (
+				01E6AADE1F9E933B00283B7E /* Sources */,
+				01E6AADF1F9E933B00283B7E /* Frameworks */,
+				01E6AAE01F9E933B00283B7E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = chcl;
+			productName = chcl;
+			productReference = 01E6AAE21F9E933B00283B7E /* chcl */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01D5407A1F9AA0EF00A721C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Alexander Sosnovskiy";
+				TargetAttributes = {
+					01D540811F9AA0EF00A721C6 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					01E6AAE11F9E933B00283B7E = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 01D5407D1F9AA0EF00A721C6 /* Build configuration list for PBXProject "coinhivelib" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 01D540791F9AA0EF00A721C6;
+			productRefGroup = 01D540831F9AA0EF00A721C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01D540811F9AA0EF00A721C6 /* unihivelib */,
+				01E6AAE11F9E933B00283B7E /* chcl */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01D540801F9AA0EF00A721C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01D5407E1F9AA0EF00A721C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01D540E81F9AA1B600A721C6 /* minethd.cpp in Sources */,
+				01D5408C1F9AA0FF00A721C6 /* unihivelib.cpp in Sources */,
+				01D540CB1F9AA19300A721C6 /* c_keccak.c in Sources */,
+				01D540C81F9AA19300A721C6 /* c_blake256.c in Sources */,
+				01D540C91F9AA19300A721C6 /* c_groestl.c in Sources */,
+				01D540EB1F9AA1B600A721C6 /* jconf.cpp in Sources */,
+				01D540CC1F9AA19300A721C6 /* c_skein.c in Sources */,
+				01D540CD1F9AA19300A721C6 /* cryptonight_common.cpp in Sources */,
+				01D540CA1F9AA19300A721C6 /* c_jh.c in Sources */,
+				01D540CE1F9AA19300A721C6 /* soft_aes.c in Sources */,
+				01D540EE1F9AA1B600A721C6 /* executor.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		01E6AADE1F9E933B00283B7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01E6AAEA1F9E968D00283B7E /* c_blake256.c in Sources */,
+				01E6AAEB1F9E968D00283B7E /* c_groestl.c in Sources */,
+				01E6AAEC1F9E968D00283B7E /* c_jh.c in Sources */,
+				01E6AAED1F9E968D00283B7E /* c_keccak.c in Sources */,
+				01E6AAEE1F9E968D00283B7E /* c_skein.c in Sources */,
+				01E6AAEF1F9E968D00283B7E /* cryptonight_common.cpp in Sources */,
+				01E6AAFA1F9EB10D00283B7E /* unihivelib.cpp in Sources */,
+				01E6AAF01F9E968D00283B7E /* soft_aes.c in Sources */,
+				01E6AAF11F9E968D00283B7E /* executor.cpp in Sources */,
+				01E6AAF21F9E968D00283B7E /* jconf.cpp in Sources */,
+				01E6AAF41F9E968D00283B7E /* minethd.cpp in Sources */,
+				01E6AAE51F9E933C00283B7E /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		01D540861F9AA0EF00A721C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		01D540871F9AA0EF00A721C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		01D540891F9AA0EF00A721C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				HEADER_SEARCH_PATHS = /opt/local/include;
+				INFOPLIST_FILE = coinhivelib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/local/lib,
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				OTHER_LDFLAGS = "";
+				PRELINK_LIBS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexso.coinhivelib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		01D5408A1F9AA0EF00A721C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				HEADER_SEARCH_PATHS = /opt/local/include;
+				INFOPLIST_FILE = coinhivelib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/local/lib,
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				OTHER_LDFLAGS = "";
+				PRELINK_LIBS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexso.coinhivelib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		01E6AAE71F9E933C00283B7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				HEADER_SEARCH_PATHS = /opt/local/include;
+				LIBRARY_SEARCH_PATHS = /opt/local/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		01E6AAE81F9E933C00283B7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				HEADER_SEARCH_PATHS = /opt/local/include;
+				LIBRARY_SEARCH_PATHS = /opt/local/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01D5407D1F9AA0EF00A721C6 /* Build configuration list for PBXProject "coinhivelib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01D540861F9AA0EF00A721C6 /* Debug */,
+				01D540871F9AA0EF00A721C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01D540881F9AA0EF00A721C6 /* Build configuration list for PBXNativeTarget "unihivelib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01D540891F9AA0EF00A721C6 /* Debug */,
+				01D5408A1F9AA0EF00A721C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01E6AAE61F9E933C00283B7E /* Build configuration list for PBXNativeTarget "chcl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01E6AAE71F9E933C00283B7E /* Debug */,
+				01E6AAE81F9E933C00283B7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 01D5407A1F9AA0EF00A721C6 /* Project object */;
+}
