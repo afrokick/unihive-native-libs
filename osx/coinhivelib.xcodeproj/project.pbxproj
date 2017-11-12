@@ -81,8 +81,6 @@
 		01D540F41F9B6D8900A721C6 /* unihivelib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = unihivelib.h; sourceTree = "<group>"; };
 		01E6AAE21F9E933B00283B7E /* chcl */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = chcl; sourceTree = BUILT_PRODUCTS_DIR; };
 		01E6AAE41F9E933C00283B7E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		01E6AB011F9F789300283B7E /* unihiveioslib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = unihiveioslib.h; sourceTree = "<group>"; };
-		01E6AB021F9F789300283B7E /* unihiveioslib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = unihiveioslib.m; sourceTree = "<group>"; };
 		01E6AB131F9F84E700283B7E /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = ../../../../../opt/local/lib/libcrypto.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,7 +110,6 @@
 				01D5408D1F9AA17700A721C6 /* miner */,
 				01D540841F9AA0EF00A721C6 /* coinhivelib */,
 				01E6AAE31F9E933C00283B7E /* chcl */,
-				01E6AB001F9F789300283B7E /* unihiveioslib */,
 				01D540831F9AA0EF00A721C6 /* Products */,
 				01D540EF1F9AAB6200A721C6 /* Frameworks */,
 			);
@@ -194,15 +191,6 @@
 				01E6AAE41F9E933C00283B7E /* main.cpp */,
 			);
 			path = chcl;
-			sourceTree = "<group>";
-		};
-		01E6AB001F9F789300283B7E /* unihiveioslib */ = {
-			isa = PBXGroup;
-			children = (
-				01E6AB011F9F789300283B7E /* unihiveioslib.h */,
-				01E6AB021F9F789300283B7E /* unihiveioslib.m */,
-			);
-			path = unihiveioslib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
