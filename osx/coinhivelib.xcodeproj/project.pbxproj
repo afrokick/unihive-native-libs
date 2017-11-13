@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01669F951FBA069200326948 /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = 01669F941FBA069200326948 /* CMakeLists.txt */; };
 		01D5408C1F9AA0FF00A721C6 /* unihivelib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01D5408B1F9AA0FF00A721C6 /* unihivelib.cpp */; };
 		01D540C81F9AA19300A721C6 /* c_blake256.c in Sources */ = {isa = PBXBuildFile; fileRef = 01D540B61F9AA19300A721C6 /* c_blake256.c */; };
 		01D540C91F9AA19300A721C6 /* c_groestl.c in Sources */ = {isa = PBXBuildFile; fileRef = 01D540B81F9AA19300A721C6 /* c_groestl.c */; };
@@ -45,6 +46,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		01669F941FBA069200326948 /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
 		01D540821F9AA0EF00A721C6 /* unihivelib.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = unihivelib.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		01D540851F9AA0EF00A721C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01D5408B1F9AA0FF00A721C6 /* unihivelib.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = unihivelib.cpp; sourceTree = "<group>"; };
@@ -102,7 +104,7 @@
 			children = (
 				01D5408D1F9AA17700A721C6 /* miner */,
 				01D540841F9AA0EF00A721C6 /* coinhivelib */,
-				01E6AAE31F9E933C00283B7E /* chcl */,
+				01E6AAE31F9E933C00283B7E /* console */,
 				01D540831F9AA0EF00A721C6 /* Products */,
 				01D540EF1F9AAB6200A721C6 /* Frameworks */,
 			);
@@ -121,8 +123,6 @@
 			isa = PBXGroup;
 			children = (
 				01D540851F9AA0EF00A721C6 /* Info.plist */,
-				01D5408B1F9AA0FF00A721C6 /* unihivelib.cpp */,
-				01D540F41F9B6D8900A721C6 /* unihivelib.h */,
 			);
 			path = coinhivelib;
 			sourceTree = "<group>";
@@ -130,6 +130,7 @@
 		01D5408D1F9AA17700A721C6 /* miner */ = {
 			isa = PBXGroup;
 			children = (
+				01669F941FBA069200326948 /* CMakeLists.txt */,
 				01D540B51F9AA19300A721C6 /* crypto */,
 				01D540E41F9AA1B600A721C6 /* executor.cpp */,
 				01D540D61F9AA1B500A721C6 /* executor.h */,
@@ -139,6 +140,8 @@
 				01D540D31F9AA1B500A721C6 /* minethd.h */,
 				01D540D41F9AA1B500A721C6 /* msgstruct.h */,
 				01D540D71F9AA1B500A721C6 /* thdq.hpp */,
+				01D5408B1F9AA0FF00A721C6 /* unihivelib.cpp */,
+				01D540F41F9B6D8900A721C6 /* unihivelib.h */,
 			);
 			path = miner;
 			sourceTree = "<group>";
@@ -175,12 +178,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		01E6AAE31F9E933C00283B7E /* chcl */ = {
+		01E6AAE31F9E933C00283B7E /* console */ = {
 			isa = PBXGroup;
 			children = (
 				01E6AAE41F9E933C00283B7E /* main.cpp */,
 			);
-			path = chcl;
+			path = console;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +265,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01669F951FBA069200326948 /* CMakeLists.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

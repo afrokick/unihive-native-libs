@@ -1,10 +1,7 @@
-// keccak.h
-// 19-Nov-11  Markku-Juhani O. Saarinen <mjos@iki.fi>
-
 #ifndef KECCAK_H
 #define KECCAK_H
 
-#include <stdint.h>
+//#include <stdint.h>
 #include <string.h>
 
 #ifndef KECCAK_ROUNDS

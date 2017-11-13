@@ -1,7 +1,7 @@
 #ifndef _BLAKE256_H_
 #define _BLAKE256_H_
 
-//#include <stdint.h>
+#include <stdint.h>
 
 typedef struct {
   uint32_t h[8], s[4], t[2];

@@ -2,7 +2,7 @@
 // 19-Nov-11  Markku-Juhani O. Saarinen <mjos@iki.fi>
 // A baseline Keccak (3rd round) implementation.
 
-//#include <stdint.h>
+#include <stdint.h>
 #include <memory.h>
 
 #define HASH_DATA_AREA 136

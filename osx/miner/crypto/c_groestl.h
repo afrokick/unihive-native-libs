@@ -1,17 +1,7 @@
 #ifndef __hash_h
 #define __hash_h
-/*
-#include "crypto_uint8.h"
-#include "crypto_uint32.h"
-#include "crypto_uint64.h"
-#include "crypto_hash.h" 
 
-typedef crypto_uint8 uint8_t; 
-typedef crypto_uint32 uint32_t; 
-typedef crypto_uint64 uint64_t;
-*/
 #include <stdint.h>
-
 #include "hash.h"
 
 /* some sizes (number of bytes) */
@@ -34,7 +24,6 @@ typedef crypto_uint64 uint64_t;
    (ROTL32(a,24) & li_32(FF00FF00)))
 
 
-/* NIST API begin */
 typedef struct {
   uint32_t chaining[SIZE512/sizeof(uint32_t)];            /* actual state */
   uint32_t block_counter1,
@@ -45,16 +34,7 @@ typedef struct {
 			       data buffer */
 } groestlHashState;
 
-/*void Init(hashState*);
-void Update(hashState*, const BitSequence*, DataLength);
-void Final(hashState*, BitSequence*); */
 void groestl(const BitSequence*, DataLength, BitSequence*);
-/* NIST API end   */
 
-/*
-int crypto_hash(unsigned char *out,
-		const unsigned char *in,
-		unsigned long long len);
-*/
 
 #endif /* __hash_h */

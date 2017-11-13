@@ -1,16 +1,25 @@
 #include "unihivelib.h"
+#include "jconf.h"
 
 bool Initialize(ErrorCallback onError, HashFoundCallback onHashFound,VerifiedCallback onVerifiedCallback, int threads)
 {
-    if (!minethd::self_test())
-    {
-        return false;
-    }
-    
     executor::inst()->errorCallback = onError;
     executor::inst()->hashFoundCallback = onHashFound;
     executor::inst()->verifiedCallback = onVerifiedCallback;
     executor::inst()->threadsCount = threads;
+    
+    bool aes = jconf::inst()->HaveHardwareAes();
+    
+    if(aes){
+        onError("you have AES");
+    }else{
+        onError("no AES");
+    }
+    
+    if (!minethd::self_test())
+    {
+        return false;
+    }
     
     return true;
 }

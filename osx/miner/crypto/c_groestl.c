@@ -4,8 +4,6 @@
  *
  *  This work is based on the implementation of
  *          Soeren S. Thomsen and Krystian Matusiewicz
- *          
- *
  */
 
 #include "c_groestl.h"
@@ -348,13 +346,3 @@ void groestl(const BitSequence* data,
   /* finalise */
   Final(&context, hashval);
 }
-/*
-static int crypto_hash(unsigned char *out,
-		const unsigned char *in,
-		unsigned long long len)
-{
-  groestl(in, 8*len, out);
-  return 0;
-}
-
-*/
